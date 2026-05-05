@@ -1,5 +1,6 @@
 import schema from '../schema/Text.schema.json'
 import type { ReactNode } from 'react'
+import { useTheme } from '../styles'
 
 export interface TextProps {
   as?: keyof JSX.IntrinsicElements
@@ -18,11 +19,23 @@ export function Text({
   weight = 'normal',
   color,
 }: TextProps) {
+  const { tokens } = useTheme()
+
+  const fontSizeMap = {
+    small: tokens.typography.fontSize.sm,
+    medium: tokens.typography.fontSize.base,
+    large: tokens.typography.fontSize.lg,
+  }
+
+  const fontWeightMap = {
+    normal: tokens.typography.fontWeight.normal,
+    bold: tokens.typography.fontWeight.bold,
+  }
+
   const style = {
-    fontSize:
-      size === 'small' ? '0.85rem' : size === 'large' ? '1.25rem' : '1rem',
-    fontWeight: weight === 'bold' ? 700 : 400,
-    color,
+    fontSize: fontSizeMap[size],
+    fontWeight: fontWeightMap[weight],
+    color: color || tokens.colors.neutral.dark,
   } as const
 
   return (
@@ -32,4 +45,4 @@ export function Text({
   )
 }
 
-export const TextSchema = schema
+export const TextSchema = schema;
