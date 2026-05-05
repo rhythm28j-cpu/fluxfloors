@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ListProps",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": ["string", "number", "boolean", "object", "array", "null"]
+      }
+    },
+    "ordered": {
+      "type": "boolean"
+    },
+    "className": {
+      "type": "string"
+    }
+  },
+  "required": ["items"],
+  "additionalProperties": false
+}

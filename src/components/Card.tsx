@@ -1,3 +1,4 @@
+import schema from '../schema/Card.schema.json'
 import type { ReactNode } from 'react'
 
 export interface CardProps {
@@ -28,3 +29,5 @@ export function Card({
     </div>
   )
 }
+
+export const CardSchema = schema

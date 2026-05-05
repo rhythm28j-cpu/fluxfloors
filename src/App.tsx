@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from './components'
 import './App.css'
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
         <h1>Flux Floors</h1>
       </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
       </div>
     </div>
   )

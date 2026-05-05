@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CardProps",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "children": {
+      "description": "Content rendered inside the card",
+      "type": ["string", "number", "boolean", "object", "array", "null"]
+    },
+    "footer": {
+      "description": "Footer content rendered below the card body",
+      "type": ["string", "number", "boolean", "object", "array", "null"]
+    },
+    "className": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

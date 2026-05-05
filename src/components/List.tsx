@@ -1,4 +1,5 @@
-import { ReactNode } from 'react';
+import schema from '../schema/List.schema.json'
+import type { ReactNode } from 'react'
 
 export interface ListProps<Item extends ReactNode = ReactNode> {
   items: Item[]
@@ -21,3 +22,5 @@ export function List<Item extends ReactNode = ReactNode>({
     </ListElement>
   )
 }
+
+export const ListSchema = schema

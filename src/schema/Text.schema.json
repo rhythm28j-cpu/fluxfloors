@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TextProps",
+  "type": "object",
+  "properties": {
+    "as": {
+      "type": "string",
+      "description": "Element or HTML tag to render"
+    },
+    "children": {
+      "description": "Content rendered inside the text component",
+      "type": ["string", "number", "boolean", "object", "array", "null"]
+    },
+    "className": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "enum": ["small", "medium", "large"]
+    },
+    "weight": {
+      "type": "string",
+      "enum": ["normal", "bold"]
+    },
+    "color": {
+      "type": "string"
+    }
+  },
+  "required": ["children"],
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ButtonProps",
+  "type": "object",
+  "properties": {
+    "children": {
+      "description": "Button label or content",
+      "type": ["string", "number", "boolean", "object", "array", "null"]
+    },
+    "onClick": {
+      "description": "Click handler function is not representable in JSON schema"
+    },
+    "className": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["button", "submit", "reset"]
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "variant": {
+      "type": "string",
+      "enum": ["primary", "secondary", "ghost"]
+    }
+  },
+  "required": ["children"],
+  "additionalProperties": false
+}

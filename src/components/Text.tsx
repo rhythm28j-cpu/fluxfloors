@@ -1,3 +1,4 @@
+import schema from '../schema/Text.schema.json'
 import type { ReactNode } from 'react'
 
 export interface TextProps {
@@ -30,3 +31,5 @@ export function Text({
     </Component>
   )
 }
+
+export const TextSchema = schema

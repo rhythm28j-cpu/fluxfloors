@@ -1,3 +1,4 @@
+import schema from '../schema/Table.schema.json'
 import type { ReactNode } from 'react'
 
 export interface TableProps<RowData extends Record<string, ReactNode>> {
@@ -39,3 +40,5 @@ export function Table<RowData extends Record<string, ReactNode>>({
     </table>
   )
 }
+
+export const TableSchema = schema

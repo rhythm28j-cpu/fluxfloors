@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ImageContainerProps",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string"
+    },
+    "width": {
+      "type": ["string", "number"]
+    },
+    "height": {
+      "type": ["string", "number"]
+    },
+    "children": {
+      "description": "Optional React children rendered below the image",
+      "type": ["string", "number", "boolean", "object", "array", "null"]
+    }
+  },
+  "required": ["src", "alt"],
+  "additionalProperties": false
+}

@@ -1,3 +1,4 @@
+import schema from '../schema/ImageContainer.schema.json'
 import type { ReactNode } from 'react'
 
 export interface ImageContainerProps {
@@ -27,3 +28,5 @@ export function ImageContainer({
     </figure>
   )
 }
+
+export const ImageContainerSchema = schema

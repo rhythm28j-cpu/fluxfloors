@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TableProps",
+  "type": "object",
+  "properties": {
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": {
+          "type": ["string", "number", "boolean", "object", "array", "null"]
+        }
+      }
+    },
+    "className": {
+      "type": "string"
+    },
+    "renderCell": {
+      "description": "Optional render callback, not directly representable in JSON schema"
+    }
+  },
+  "required": ["columns", "data"],
+  "additionalProperties": false
+}
