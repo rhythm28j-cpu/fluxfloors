@@ -5,6 +5,89 @@
   text-align: center;
 }
 
+.demo-page {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.demo-hero {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.demo-hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.demo-hero p {
+  color: #546e56;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.demo-section {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+}
+
+.demo-meta {
+  margin-bottom: 1rem;
+}
+
+.demo-meta h2 {
+  margin-bottom: 0.5rem;
+}
+
+.demo-meta p {
+  color: #4f5e4f;
+  line-height: 1.6;
+}
+
+.demo-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.demo-card {
+  background: #f8faf6;
+  border: 1px solid #e6ece3;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.demo-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.demo-card__header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.demo-render {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #d3dccf;
+  margin-bottom: 1rem;
+}
+
+.demo-props {
+  background: #1f2937;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
