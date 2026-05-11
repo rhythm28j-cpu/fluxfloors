@@ -64,15 +64,32 @@ export const componentRegistry: ComponentRegistryEntry[] = [
   {
     id: 'table',
     name: 'Table',
-    description: 'A table component that renders rows based on column keys and row objects.',
+    description: 'A table component that renders rows based on column keys and row objects. Supports border variants for rows and cells.',
     component: Table,
     schema: tableSchema,
     examples: [
       {
-        title: 'Simple table',
+        title: 'Table without borders',
         props: {
           columns: ['Name', 'Value'],
           data: [{ Name: 'Height', Value: '180cm' }, { Name: 'Weight', Value: '75kg' }],
+          borders: 'none',
+        },
+      },
+      {
+        title: 'Table with row borders',
+        props: {
+          columns: ['Name', 'Value'],
+          data: [{ Name: 'Height', Value: '180cm' }, { Name: 'Weight', Value: '75kg' }],
+          borders: 'rows',
+        },
+      },
+      {
+        title: 'Table with cell borders',
+        props: {
+          columns: ['Name', 'Value'],
+          data: [{ Name: 'Height', Value: '180cm' }, { Name: 'Weight', Value: '75kg' }],
+          borders: 'cells',
         },
       },
     ],

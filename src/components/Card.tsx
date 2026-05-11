@@ -30,4 +30,4 @@ export function Card({
   )
 }
 
-export const CardSchema = schema
+export const CardSchema = schema;

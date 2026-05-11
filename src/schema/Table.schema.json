@@ -23,6 +23,11 @@
     },
     "renderCell": {
       "description": "Optional render callback, not directly representable in JSON schema"
+    },
+    "borders": {
+      "type": "string",
+      "enum": ["none", "rows", "cells"],
+      "description": "Border style for the table: 'none' (no borders), 'rows' (horizontal row borders), 'cells' (borders around each cell)"
     }
   },
   "required": ["columns", "data"],
