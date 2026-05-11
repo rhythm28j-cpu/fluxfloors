@@ -150,4 +150,49 @@ export const globalStyles = `
     margin: 0 auto;
     padding: var(--spacing-xl);
   }
+
+  .loading-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loading-dot {
+    display: inline-block;
+    border-radius: var(--border-radius-full);
+    animation: loading-dot 0.9s ease-in-out infinite;
+  }
+
+  .loading-dot:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .loading-dot:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .loading-dot:nth-child(4) {
+    animation-delay: 0.45s;
+  }
+
+  .loading-dot:nth-child(5) {
+    animation-delay: 0.6s;
+  }
+
+  .loading-dot:nth-child(6) {
+    animation-delay: 0.75s;
+  }
+
+  @keyframes loading-dot {
+    0%,
+    80%,
+    100% {
+      transform: scale(0.8);
+      opacity: 0.45;
+    }
+    40% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
 `

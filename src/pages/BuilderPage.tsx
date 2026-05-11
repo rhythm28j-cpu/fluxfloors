@@ -28,8 +28,8 @@ export default function BuilderPage() {
     {
       componentId: 'card',
       props: {
-        title: 'Generated Card',
-        subtitle: 'This card was created by AI',
+        title: 'Card Headline',
+        subtitle: 'Card sub-heading',
         children: 'The GenUIContainer validates and renders components based on JSON schema definitions.',
       },
     },
@@ -43,6 +43,14 @@ export default function BuilderPage() {
           { Feature: 'Dynamic Rendering', Status: 'Active' },
         ],
         borders: 'rows',
+      },
+    },
+    {
+      componentId: 'loadingIndicator',
+      props: {
+        label: 'Loading AI results...',
+        size: 'medium',
+        dotCount: 4,
       },
     },
   ]

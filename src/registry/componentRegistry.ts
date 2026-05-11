@@ -1,9 +1,10 @@
 import type { ComponentType } from 'react'
-import { Button, Card, ImageContainer, List, Table, Text } from '../components'
+import { Button, Card, ImageContainer, List, LoadingIndicator, Table, Text } from '../components'
 import buttonSchema from '../schema/Button.schema.json'
 import cardSchema from '../schema/Card.schema.json'
 import imageContainerSchema from '../schema/ImageContainer.schema.json'
 import listSchema from '../schema/List.schema.json'
+import loadingIndicatorSchema from '../schema/LoadingIndicator.schema.json'
 import tableSchema from '../schema/Table.schema.json'
 import textSchema from '../schema/Text.schema.json'
 
@@ -92,6 +93,17 @@ export const componentRegistry: ComponentRegistryEntry[] = [
           borders: 'cells',
         },
       },
+    ],
+  },
+  {
+    id: 'loadingIndicator',
+    name: 'LoadingIndicator',
+    description: 'A dot-based loading indicator with animating horizontal dots and optional label.',
+    component: LoadingIndicator,
+    schema: loadingIndicatorSchema,
+    examples: [
+      { title: 'Default loading indicator', props: { label: 'Loading...' } },
+      { title: 'Large custom dot count', props: { size: 'large', dotCount: 4, label: 'Please wait' } },
     ],
   },
   {
