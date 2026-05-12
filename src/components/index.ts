@@ -1,7 +1,7 @@
 export { Button, ButtonSchema } from './Button'
 export { Card, CardSchema } from './Card'
 export { ErrorBoundary } from './ErrorBoundary'
-export { GenUIContainer } from './GenUIContainer'
+export { GenUIContainer, type GenUIItem, type GenUIContainerProps } from './GenUIContainer'
 export { ImageContainer, ImageContainerSchema } from './ImageContainer'
 export { List, ListSchema } from './List'
 export { LoadingIndicator } from './LoadingIndicator'

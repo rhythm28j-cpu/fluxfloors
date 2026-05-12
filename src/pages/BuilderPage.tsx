@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { GenUIContainer, type GenUIItem } from '../components/GenUIContainer'
+import { Card, GenUIContainer, type GenUIItem } from '../components'
 import { useTheme } from '../styles'
 
 export default function BuilderPage() {
@@ -72,23 +72,24 @@ export default function BuilderPage() {
       </header>
 
       {validationErrors.length > 0 && (
-        <div
+        <Card
+          title="Validation Errors"
+          className="error-card"
           style={{
             padding: tokens.spacing.lg,
-            backgroundColor: '#fee2e2',
+            backgroundColor: `${tokens.colors.error}15`,
             borderRadius: tokens.borders.radius.lg,
-            border: `1px solid #fca5a5`,
-            color: '#991b1b',
+            border: `1px solid ${tokens.colors.error}60`,
+            color: tokens.colors.error,
             marginBottom: tokens.spacing.lg,
           }}
         >
-          <h3>Validation Errors</h3>
           <ul>
             {validationErrors.map((error, idx) => (
               <li key={idx}>{error}</li>
             ))}
           </ul>
-        </div>
+        </Card>
       )}
 
       <section className="builder-container">
